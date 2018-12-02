@@ -25,4 +25,12 @@ class FiboDyn {
         }
         return tab[tab.length - 1];
     }
+    
+    static int fiboz(int n)
+    {
+        if (n == 1 || n == 2)
+            return 1;
+        else
+            return 3* ( fibo(n-1) * fibo(n-2) );
+    }
 }
