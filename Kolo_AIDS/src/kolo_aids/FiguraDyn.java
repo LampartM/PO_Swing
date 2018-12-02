@@ -30,5 +30,5 @@ public class FiguraDyn {
             }
         }
         System.out.println("Pole figury = "+(nalezace/i) );
-    }
+    }  
 }

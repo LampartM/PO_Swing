@@ -33,4 +33,34 @@ class FiboDyn {
         else
             return 3* ( fibo(n-1) * fibo(n-2) );
     }
+    
+    
+    static int fibo2dyn(int n)
+    {
+        int[] tab = new int[n+1];
+        tab[1] = 1;
+        tab[2] = 1;
+        for (int i = 3; i < tab.length; i++)
+        {
+           // tab[i] = tab[i-1] + tab[i-2]; // zamiast tego to warunki w if'ach
+            // tam były 3 wartunki ze i>2 i i%3=0 itd.
+            //pierwszy wartunek będzie tu zawsze spełniony bo pętla zaczyna się od 3
+            //więc if'y mniej więcej tak
+            if(i%3==0)
+            {
+                //i tu funkcja
+            }
+            if(i%3==1)
+            {
+                // druga funkcja
+            }
+            if (i%3==2)
+            {
+                //trzecia funkcja
+            }
+        }
+
+        return tab[tab.length - 1];
+    }
 }
+
